@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>איך להתקין אפליקציות</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Assistant:wght@400;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-red: #D02020;
+      --primary-blue: #1040C0;
+      --primary-yellow: #F0C020;
+      --bauhaus-black: #121212;
+      --bauhaus-white: #F0F0F0;
+    }
+
+    body {
+      background-color: var(--bauhaus-white);
+      color: var(--bauhaus-black);
+      font-family: 'Assistant', sans-serif;
+      background-image: radial-gradient(var(--bauhaus-black) 1px, transparent 1px);
+      background-size: 32px 32px;
+      background-attachment: fixed;
+    }
+
+    .font-bauhaus { font-family: 'Outfit', sans-serif; }
+    
+    .hard-shadow-sm { box-shadow: 4px 4px 0px 0px rgba(0,0,0,1); }
+    .hard-shadow-md { box-shadow: 6px 6px 0px 0px var(--bauhaus-black); }
+    .hard-shadow-lg { box-shadow: 10px 10px 0px 0px var(--bauhaus-black); }
+
+    .btn-press:active {
+      transform: translate(3px, 3px);
+      box-shadow: none;
+    }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="m-0 p-0 overflow-x-hidden">
+
+  <!-- TOP NAV -->
+  <nav class="sticky top-0 z-50 bg-white border-b-4 border-black px-6 py-3 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-[#D02020] rounded-full border-[3px] border-black"></div>
+      <div class="w-8 h-8 bg-[#F0C020] border-[3px] border-black"></div>
+      <div class="w-0 h-0 border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent border-b-[28px] border-b-[#1040C0] relative -top-[2px]"></div>
+    </div>
+    <a href="https://chat.whatsapp.com/EmgkF5JFfjgCJoZoNsKQ64?mode=gi_t" target="_blank" 
+       class="bg-[#1040C0] text-white px-5 py-2 border-[3px] border-black hard-shadow-sm font-bold uppercase text-sm tracking-wide btn-press transition-all">
+      הצטרפות לקבוצה
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative border-b-4 border-black overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+      <div class="p-8 lg:p-20 lg:w-2/3 border-b-4 lg:border-b-0 lg:border-l-4 border-black flex flex-col justify-center">
+        <h1 class="font-bauhaus font-black text-6xl lg:text-8xl leading-[0.9] uppercase tracking-tighter">
+          איך להתקין<br/><span class="text-[#D02020]">אפליקציות</span>
+        </h1>
+      </div>
+      <div class="lg:w-1/3 bg-[#1040C0] min-h-[250px] relative p-12 overflow-hidden flex items-center justify-center">
+        <div class="relative w-48 h-48">
+            <div class="absolute inset-0 bg-[#F0C020] rounded-full border-4 border-black animate-pulse"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white border-4 border-black rotate-45"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#D02020] border-4 border-black flex items-center justify-center">
+                <div class="w-6 h-6 bg-black rounded-full"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- STEPS -->
+  <main class="max-w-7xl mx-auto py-24 px-8">
+    <div class="flex items-center gap-4 mb-16">
+      <div class="w-12 h-4 bg-[#D02020] border-2 border-black"></div>
+      <h2 class="font-bauhaus font-black text-4xl uppercase tracking-tighter">שלבי ההתקנה</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-4 border-black bg-black">
+      
+      <!-- Step 1 -->
+      <div class="bg-white border-b-4 md:border-b-4 md:border-l-4 border-black p-10 reveal">
+        <div class="flex items-start gap-6">
+          <div class="w-16 h-16 bg-[#D02020] rounded-full border-4 border-black flex items-center justify-center shrink-0">
+            <span class="font-bauhaus font-black text-3xl text-white">01</span>
+          </div>
+          <div>
+            <h3 class="font-black text-2xl mb-4">הורידו את הקובץ מהקבוצה</h3>
+            <p class="text-lg leading-relaxed text-gray-700">היכנסו לקבוצת הוואטסאפ שלנו, מצאו את ההודעה עם קובץ ה-APK ולחצו עליה להורדה.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-[#F0C020] border-b-4 md:border-b-4 md:border-l-4 border-black p-10 reveal">
+        <div class="flex items-start gap-6">
+          <div class="w-16 h-16 bg-white border-4 border-black flex items-center justify-center shrink-0">
+            <span class="font-bauhaus font-black text-3xl">02</span>
+          </div>
+          <div>
+            <h3 class="font-black text-2xl mb-4">וואטסאפ יזהיר? הכל טוב.</h3>
+            <p class="text-lg leading-relaxed">וואטסאפ תמיד מזהיר על קבצים כאלו. הקובץ שלנו בטוח — פשוט לחצו "פתיחת קובץ" או "התקנה".</p>
+            <div class="mt-4 inline-block bg-black text-white px-3 py-1 text-sm font-bold">⚠️ ההזהרה אוטומטית לגמרי</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-white border-b-4 md:border-b-4 border-black p-10 reveal">
+        <div class="flex items-start gap-6">
+          <div class="w-16 h-16 bg-[#1040C0] border-4 border-black flex items-center justify-center shrink-0 rotate-45">
+            <span class="font-bauhaus font-black text-3xl text-white -rotate-45">03</span>
+          </div>
+          <div>
+            <h3 class="font-black text-2xl mb-4">אפשרו התקנה מהמקור הזה</h3>
+            <p class="text-lg leading-relaxed">אם הטלפון חוסם, לחצו על "הגדרות" במסך שקפץ, הפעילו את הסוויץ' ואז חזרו אחורה להמשיך.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="bg-white border-b-4 md:border-b-0 md:border-l-4 border-black p-10 reveal">
+        <div class="flex items-start gap-6">
+          <div class="w-16 h-16 bg-black border-4 border-black flex items-center justify-center shrink-0">
+            <span class="font-bauhaus font-black text-3xl text-white">04</span>
+          </div>
+          <div>
+            <h3 class="font-black text-2xl mb-4">לחצו "התקן"</h3>
+            <p class="text-lg leading-relaxed text-gray-700">חכו כמה שניות עד שיופיע הכפתור "פתח".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="bg-[#1040C0] md:border-l-4 border-black p-10 reveal">
+        <div class="flex items-start gap-6 text-white">
+          <div class="w-16 h-16 bg-[#F0C020] border-4 border-black flex items-center justify-center shrink-0">
+            <span class="font-bauhaus font-black text-3xl text-black">05</span>
+          </div>
+          <div>
+            <h3 class="font-black text-2xl mb-4">התחברות (שימו לב!)</h3>
+            <p class="text-lg leading-relaxed opacity-90">כאן זה נהיה קצת מוזר: חלק מהאפליקציות עובדות עם גוגל, חלק לא, וחלק <strong>רק</strong> עם גוגל. אם הכפתור לא מגיב או מחזיר שגיאה - פשוט השתמשו במייל וסיסמה.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Filler -->
+      <div class="hidden lg:block bg-white p-10 relative overflow-hidden">
+        <div class="w-full h-full border-4 border-black flex items-center justify-center">
+            <div class="w-16 h-16 border-8 border-[#D02020] rounded-full animate-bounce"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- TROUBLESHOOTING -->
+  <section class="bg-[#D02020] border-y-4 border-black py-24 px-8 overflow-hidden relative">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <h2 class="font-bauhaus font-black text-5xl lg:text-7xl text-white uppercase tracking-tighter mb-16">
+        דברים שכדאי לדעת
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white border-4 border-black hard-shadow-lg p-8 reveal">
+          <h4 class="font-black text-xl mb-4 text-[#1040C0]">🛡️ האפליקציות שלנו בטוחות לגמרי</h4>
+          <p class="font-bold text-gray-600">לפעמים המערכת של הטלפון תקפיץ אזהרה שהאפליקציה "עלולה להזיק". זה קורה באופן אוטומטי לכל אפליקציה שלא מגיעה ישירות מחנות האפליקציות (כמו Google Play). אל תדאגו - הקבצים שלנו נקיים ובטוחים לשימוש.</p>
+        </div>
+
+        <div class="bg-white border-4 border-black hard-shadow-lg p-8 reveal">
+          <h4 class="font-black text-xl mb-4 text-[#1040C0]">🔵 ענייני Google Login</h4>
+          <p class="font-bold text-gray-600">הכניסה עם גוגל עושה בעיות לפעמים. אם האפליקציה מציעה רק גוגל והוא לא עובד, או אם היא מציעה גוגל והוא פשוט לא מגיב - דברו איתנו. ברוב המקרים הכי בטוח להשתמש במייל רגיל.</p>
+        </div>
+
+        <div class="bg-white border-4 border-black hard-shadow-lg p-8 reveal">
+          <h4 class="font-black text-xl mb-4 text-[#1040C0]">🧩 חובה להתקין תוסף (Extension)</h4>
+          <p class="font-bold text-gray-600">יש אפליקציות שפשוט לא ייפתחו בלי תוסף משלים. אם שלחנו לכם שני קבצים - תתקינו את שניהם, אחרת האפליקציה לא תעלה.</p>
+        </div>
+
+        <div class="bg-white border-4 border-black hard-shadow-lg p-8 reveal">
+          <h4 class="font-black text-xl mb-4 text-[#D02020]">🔒 Family Link / חסימת הורים</h4>
+          <p class="font-bold text-gray-600">זה חוסם התקנות APK באופן אוטומטי. רק ההורים יכולים לאשר את זה בהגדרות שלהם. אין דרך לעקוף את זה לבד.</p>
+        </div>
+
+        <div class="bg-white border-4 border-black hard-shadow-lg p-8 reveal">
+          <h4 class="font-black text-xl mb-4 text-[#F0C020]">📅 אנדרואיד ישן</h4>
+          <p class="font-bold text-gray-600">אם הטלפון ממש ישן, האפליקציה פשוט לא תתמוך בו. אם קיבלתם שגיאה שהחבילה לא תואמת - כנראה שזו הסיבה.</p>
+        </div>
+
+        <div class="bg-white border-4 border-black hard-shadow-lg p-8 reveal">
+          <h4 class="font-black text-xl mb-4 text-[#1040C0]">🍎 משתמשי אייפון</h4>
+          <p class="font-bold text-gray-600">APK זה לאנדרואיד בלבד. באייפון אי אפשר להתקין ככה אפליקציות. שלחו לנו הודעה וניתן לכם קישור אחר.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HELP CALL TO ACTION -->
+  <section class="py-32 px-8 bg-[#F0C020]">
+    <div class="max-w-4xl mx-auto text-center border-8 border-black p-12 bg-white hard-shadow-lg relative">
+        <span class="text-6xl mb-6 block">🆘</span>
+        <h2 class="font-bauhaus font-black text-5xl uppercase tracking-tighter mb-8 leading-none">
+            נתקעתם? אנחנו כאן.
+        </h2>
+        <p class="text-2xl font-bold mb-12">צלמו את המסך או שלחו סרטון קצר של השגיאה ונעזור לכם לסדר את זה צ'יק צ'ק.</p>
+        <a href="https://forms.gle/iqRaY2akXn1UhGaX8" target="_blank" class="inline-block bg-black text-white px-12 py-6 font-bold text-2xl uppercase hard-shadow-md hover:bg-[#D02020] transition-colors btn-press">
+            📋 דווחו לנו על תקלה
+        </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-12 px-8 border-t-4 border-black">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex gap-4">
+        <div class="w-4 h-4 bg-[#D02020]"></div>
+        <div class="w-4 h-4 bg-[#F0C020]"></div>
+        <div class="w-4 h-4 bg-[#1040C0]"></div>
+      </div>
+      <div class="font-bold opacity-70 uppercase tracking-widest text-sm">© איתמר קצובר 2026</div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
